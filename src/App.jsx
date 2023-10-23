@@ -1,7 +1,7 @@
 // import Sidebar from './Sidebar.jsx'; // Import your Sidebar component
 import './App.css'
 // import { useState } from 'react';
-import Explorer from './Explorer';
+import Explorer from './components/Explorer';
 
 const App = () => {
 
