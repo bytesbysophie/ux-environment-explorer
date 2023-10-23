@@ -37,16 +37,15 @@ export default function Explorer() {
     // Read data
     useEffect(() => {
       csv('/data/input_data.csv', row).then((csvData) => {
+        csvData = csvData.slice(0, 5000)
         setData(csvData);
       });
     }, []);
-  
-    console.log(data)
-    
+      
     return (
       <div>
           <h2>UX Environment Map</h2>
-          <Chart data={data} />
+          <Chart data={data} width={600} height={400} />
 
       </div>
     );
